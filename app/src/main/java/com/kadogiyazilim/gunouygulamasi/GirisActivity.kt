@@ -13,7 +13,7 @@ class GirisActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.girisekrani)
+        setContentView(R.layout.activity_girisekrani)
         //veritabanı izin alıyoruz
         auth = FirebaseAuth.getInstance()
 

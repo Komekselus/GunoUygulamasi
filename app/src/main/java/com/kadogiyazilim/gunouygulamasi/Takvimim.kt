@@ -9,9 +9,6 @@ class Takvimim : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_takvimim)
-        val calendar =findViewById<CalendarView>(R.id.calendarView)
-
-
 
     }
 }

@@ -1,7 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Güno</string>
     <string name="eposta">E-Posta</string>
     <string name="sifre">Şifre</string>
     <string name="logoaciklama">GunoLogosu</string>
     <string name="mainbuton">Başla</string>
+
+
 </resources>

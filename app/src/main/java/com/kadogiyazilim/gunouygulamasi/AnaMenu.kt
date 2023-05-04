@@ -55,7 +55,11 @@ class AnaMenu : AppCompatActivity() {
             val intent = Intent(applicationContext,Takvimim::class.java)
             startActivity(intent)
         }
-
+        val gunlukButon = findViewById<ImageButton>(R.id.btnAnaMenuGunlugum)
+        gunlukButon.setOnClickListener {
+            val intent = Intent(applicationContext,Gunlugum::class.java)
+            startActivity(intent)
+        }
         /*hesabımı sil
         * currentUser?.delete()?.addOnCompleteListener{
         *       if(it.isSuccseful){
