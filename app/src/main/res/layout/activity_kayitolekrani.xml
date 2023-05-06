@@ -107,6 +107,7 @@
         android:layout_height="51dp"
         android:background="@drawable/girisbutonarkaplan"
         android:text="Kayıt Ol"
+        android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/kayitolParolaOnay"

@@ -49,6 +49,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/girisbutonarkaplan"
         android:text="Gönder"
+        android:textColor="@color/white"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

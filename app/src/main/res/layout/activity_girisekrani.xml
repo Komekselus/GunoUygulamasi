@@ -69,6 +69,7 @@
         android:background="@drawable/girisbutonarkaplan"
         android:text="Giriş Yap"
         android:textSize="15dp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/girisParola"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/girisParola"
@@ -81,6 +82,8 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/girisbutonarkaplan"
         android:text="Kayıt Ol"
+        android:textColor="@color/white"
+
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/girisParola"
         app:layout_constraintHorizontal_bias="1.0"
@@ -95,6 +98,8 @@
         android:background="@android:color/transparent"
         android:foreground="?android:attr/selectableItemBackground"
         android:outlineProvider="none"
+        android:textColor="@color/white"
+
         android:text="Şifremi Unuttum"
         android:textSize="10dp"
 

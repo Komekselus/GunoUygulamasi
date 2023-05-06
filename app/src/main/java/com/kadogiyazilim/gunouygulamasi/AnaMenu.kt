@@ -21,7 +21,6 @@ class AnaMenu : AppCompatActivity() {
         setContentView(R.layout.activity_ana_menu)
         // TextView öğesini tanımlayın
         val textView = findViewById<TextView>(R.id.tarih)
-
 // Calendar sınıfını kullanarak bugünkü tarihi alın
         val calendar = Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -58,6 +57,11 @@ class AnaMenu : AppCompatActivity() {
         val gunlukButon = findViewById<ImageButton>(R.id.btnAnaMenuGunlugum)
         gunlukButon.setOnClickListener {
             val intent = Intent(applicationContext,Gunlugum::class.java)
+            startActivity(intent)
+        }
+        val gorevButon = findViewById<ImageButton>(R.id.btnAnaMenuGorevListesi)
+        gorevButon.setOnClickListener {
+            val intent = Intent(applicationContext,GorevListesi::class.java)
             startActivity(intent)
         }
         /*hesabımı sil
