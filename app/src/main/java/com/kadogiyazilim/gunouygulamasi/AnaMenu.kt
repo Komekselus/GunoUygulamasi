@@ -64,6 +64,11 @@ class AnaMenu : AppCompatActivity() {
             val intent = Intent(applicationContext,GorevListesi::class.java)
             startActivity(intent)
         }
+        val pomodoroButon = findViewById<ImageButton>(R.id.btnAnaMenuPomodoro)
+        pomodoroButon.setOnClickListener {
+            val intent = Intent(applicationContext,Pomodoro::class.java)
+            startActivity(intent)
+        }
         /*hesabımı sil
         * currentUser?.delete()?.addOnCompleteListener{
         *       if(it.isSuccseful){

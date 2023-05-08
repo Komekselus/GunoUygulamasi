@@ -1,5 +1,6 @@
 package com.kadogiyazilim.gunouygulamasi
 
+import android.content.Context
 import android.content.Intent
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
@@ -43,7 +44,7 @@ class GorevListesi : AppCompatActivity() {
 
         data class Gorev( val baslik: String, val aciklama: String)
 
-        class GorevlerAdapter(private val gorevler: List<Gorev>) : RecyclerView.Adapter<GorevlerAdapter.GorevViewHolder>() {
+        class GorevlerAdapter(private val gorevler: List<Gorev>,val context: Context) : RecyclerView.Adapter<GorevlerAdapter.GorevViewHolder>() {
 
             inner class GorevViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
                 val tarihGoster: TextView = itemView.findViewById(R.id.gorevListesiTarihGoster)
@@ -64,6 +65,21 @@ class GorevListesi : AppCompatActivity() {
                 holder.baslikGoster.text = baslik
                 holder.aciklamaGoster.text = aciklama
                 holder.tarihGoster.text = tarih
+
+                //seçili pozisyonu alalım
+                holder.itemView.setOnClickListener {
+                    var intent =Intent(context,GorevlerimDetay::class.java)
+                    intent.putExtra("putbaslik",baslik)
+                    intent.putExtra("putaciklama",aciklama)
+                    intent.putExtra("putveritabanitarih","$veritabaniGun$veritabaniAy$veritabaniYil")
+                    intent.putExtra("puttarih",tarih)
+                    intent.putExtra("putveritabanigun", veritabaniGun.toString())
+                    intent.putExtra("putveritabaniay",veritabaniAy.toString())
+                    intent.putExtra("putveritabaniyil",veritabaniYil.toString())
+                    context.startActivity(intent)
+
+                }
+
             }
 
             override fun getItemCount() = gorevler.size
@@ -85,7 +101,7 @@ class GorevListesi : AppCompatActivity() {
                 }
 
 
-                val adapter = GorevlerAdapter(gorevler)
+                val adapter = GorevlerAdapter(gorevler,this@GorevListesi)
                 userRecyclerView.adapter = adapter
             }
 
@@ -94,24 +110,6 @@ class GorevListesi : AppCompatActivity() {
             }
         })
 
-
-
-
-        /*reference.addListenerForSingleValueEvent(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val gorevler = StringBuilder() // görevleri birleştirmek için bir StringBuilder nesnesi oluşturuyoruz
-                for (ds in dataSnapshot.children) {
-                    val key = ds.key // örneğin, "gorev1"
-                    val value = ds.value // örneğin, "asd"
-                    gorevler.append("$key: $value\n")
-                }
-                // Yapılacaklar listesi hazır
-                // gorevler dizisini burada kullanabilirsiniz
-            }
-            override fun onCancelled(error: DatabaseError) {
-                // Hata durumunda yapılacaklar
-            }
-        })*/
 
     }
 }

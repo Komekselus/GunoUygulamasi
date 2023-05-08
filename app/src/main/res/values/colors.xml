@@ -11,4 +11,6 @@
     <color name="constraintgirisrenk">#FFFDD0</color>
     <color name="sifregirisrenk">#272727</color>
     <color name="sifregirisgonderbutonrenk">#5F3EB1</color>
+    <color name="Pbutonbg">#161932</color>
+    <color name="Pbutonbg2">#F87070</color>
 </resources>

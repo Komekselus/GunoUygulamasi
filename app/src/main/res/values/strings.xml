@@ -5,5 +5,6 @@
     <string name="logoaciklama">GunoLogosu</string>
     <string name="mainbuton">Başla</string>
 
-
+    <string name="ayarlarButonu">"Ayarlar butonu" </string>
+    <string name="preference_file_key">pomoSure</string>
 </resources>

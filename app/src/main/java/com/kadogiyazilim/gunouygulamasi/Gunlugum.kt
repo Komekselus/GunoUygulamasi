@@ -37,7 +37,6 @@ class Gunlugum : AppCompatActivity() {
         tarih.text = tarihiGetir(oAnkiGun,oAnkiAy,oAnkiYil)
 
         //fonksiyona gönderiilip ona göre o ankigünü değiştiririz falan filan
-        val ayAtladi = false
 
         //realtime databasedeki idye ulaşıp altındaki childların içindeki veriyi isim soyisim yerine aktarıc
         databaseReference.child("Kullanici").child(suankiKullaniciID.toString()).child("AdiSoyadi").get().addOnSuccessListener { adiSoyadiniGetir ->
@@ -67,7 +66,7 @@ class Gunlugum : AppCompatActivity() {
 
         //Veritabanına o günü kaydet
         kaydetButonu.setOnClickListener {
-                    databaseReference?.child("Kullanici")?.child(suankiKullaniciID.toString())?.child("Gunluk")?.child(oAnkiYil.toString())?.child(oAnkiAy.toString())?.child(oAnkiGun.toString())?.setValue(gunlukYazisi.text.toString())
+                    databaseReference.child("Kullanici").child(suankiKullaniciID.toString()).child("Gunluk").child(oAnkiYil.toString()).child(oAnkiAy.toString()).child(oAnkiGun.toString()).setValue(gunlukYazisi.text.toString())
                     Toast.makeText(this@Gunlugum,"Kaydetme Başarılı",Toast.LENGTH_LONG).show()
         }
 
