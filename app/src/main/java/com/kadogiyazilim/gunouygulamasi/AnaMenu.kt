@@ -3,6 +3,7 @@ package com.kadogiyazilim.gunouygulamasi
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Im
 import android.text.TextUtils
 import android.widget.Button
 import android.widget.ImageButton
@@ -10,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
+import com.kadogiyazilim.gunouygulamasi.Takvim
 import java.util.Calendar
 
 class AnaMenu : AppCompatActivity() {
@@ -51,7 +53,7 @@ class AnaMenu : AppCompatActivity() {
         // takvim sayfasına gidiyoruz
         val takvimButon = findViewById<ImageButton>(R.id.btnAnaMenuTakvim)
         takvimButon.setOnClickListener {
-            val intent = Intent(applicationContext,Takvimim::class.java)
+            val intent = Intent(applicationContext,Takvim::class.java)
             startActivity(intent)
         }
         val gunlukButon = findViewById<ImageButton>(R.id.btnAnaMenuGunlugum)
@@ -67,6 +69,11 @@ class AnaMenu : AppCompatActivity() {
         val pomodoroButon = findViewById<ImageButton>(R.id.btnAnaMenuPomodoro)
         pomodoroButon.setOnClickListener {
             val intent = Intent(applicationContext,Pomodoro::class.java)
+            startActivity(intent)
+        }
+        val kilitButon = findViewById<ImageButton>(R.id.btnAnaMenuGorevAgaci)
+        kilitButon.setOnClickListener{
+            val intent = Intent(applicationContext,KilitSayfasi::class.java)
             startActivity(intent)
         }
         /*hesabımı sil
