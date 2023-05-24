@@ -30,7 +30,7 @@ class Not_Ekle : AppCompatActivity() {
         // Intent'ten alınan takvim nesnesinin alınması
         val calendar = intent.getSerializableExtra(Takvim.CALENDAR_EXTRA) as Calendar
 
-        // Toolbar altbaşlığına takvim nesnesinin tarihini ekliyoruz
+        // Toolbar altbaşlığına takvim nesnesinin tarihini ekliyoruzewfwef
         binding.toolbar.subtitle = calendar.time.toSimpleDate()
 
         // Kaydet butonuna tıklandığında çalışacak kod bloğu
