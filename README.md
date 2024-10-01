@@ -13,7 +13,8 @@ Bu proje insanların bir tık uzağında olması gereken bazı uygulamaları bir
 
 ## Ekran Görüntüleri
 - Giriş
-  ![ekran1](https://github.com/user-attachments/assets/c4f00c67-40bb-42f7-b5cb-b5eecbe4a081)
+  ![image](https://github.com/user-attachments/assets/b374dfa8-6f25-4c37-a1cc-dfb86721076d)
+
 
 - Ana Menü
   ![image](https://github.com/user-attachments/assets/ff28e346-7e7d-446e-9a01-a3af0dbc4e44)
