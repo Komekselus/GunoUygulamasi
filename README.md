@@ -1,6 +1,11 @@
-# GÜNO
+# GÜNO GÜNLÜK UYGULAMASI
 
-Bu proje insanların bir tık uzağında olması gereken bazı uygulamaları bir araya toplamak üzerine gerçekleştirilmiştir
+Bu proje insanların bir tık uzağında olması gereken bazı uygulamaları bir araya toplamak üzerine gerçekleştirilmiştir.
+
+## Kazanım
+Mobil Programlamaya yeni giren bir yazılımcı adayı olarak yapılabilecek tüm temel uygulamaları tek bir çatı altında birleştirdim.
+
+
 
 ## İçerik
  - ChatGPT
@@ -11,32 +16,34 @@ Bu proje insanların bir tık uzağında olması gereken bazı uygulamaları bir
 
 
 
+
 ## Ekran Görüntüleri
-- Giriş
-  ![image](https://github.com/user-attachments/assets/b374dfa8-6f25-4c37-a1cc-dfb86721076d)
+- ### Giriş
+  * ![Giris](https://github.com/user-attachments/assets/373d166b-5e4c-4f9f-9ce8-b0277e6cf587)
+
+- ### Ana Menü
+  * ![AnaMenu](https://github.com/user-attachments/assets/3c1ed810-10f4-4381-86b1-19afdcec5fc9)
+
+- ### Takvim
+  * ![Takvim](https://github.com/user-attachments/assets/18cb00da-5d6a-497c-9e58-6b2e8a0c88b4)
+   
+- ### Günlük
+  * ![image](https://github.com/user-attachments/assets/1b111eb9-9f5f-4baf-910a-6fe4ea9960b6)
+
+- ### Pomodoro
+  * ![image](https://github.com/user-attachments/assets/e4ed0177-8e72-441f-b650-407073acdb1a)
+
+- ### ChatGPT
+  * ![image](https://github.com/user-attachments/assets/7e1b18f3-21f9-49f5-8675-bf542cee3895)
+
+- ### Ayarlar
+   * ![image](https://github.com/user-attachments/assets/390f8afb-ce23-4add-a688-7bcaa6bf7cf2)
 
 
-- Ana Menü
-  ![image](https://github.com/user-attachments/assets/ff28e346-7e7d-446e-9a01-a3af0dbc4e44)
-
-- Takvim
-  ![image](https://github.com/user-attachments/assets/0844cc02-4cf5-411f-81c2-a228b7e54c05)
-
-- Günlük
-  ![image](https://github.com/user-attachments/assets/0726453b-b790-4d3d-85be-51943e1489e6)
-
-- Pomodoro
-  ![image](https://github.com/user-attachments/assets/3d164b7f-def3-4343-b78a-66b401991f69)
-
-- ChatGPT
-  ![image](https://github.com/user-attachments/assets/e8e04d89-8b06-413c-84a8-4fb822d3faeb)
-
-- Ayarlar
-  ![image](https://github.com/user-attachments/assets/96bec74e-5c74-4844-9ba3-acd123b632b5)
 
 
 
 
 
 ## Kurulum
-Projeyi indirip  direk Android Studioda çalıştırabilirsiniz.
+Projeyi indirip  direkt Android Studioda çalıştırabilirsiniz.
